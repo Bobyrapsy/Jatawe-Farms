@@ -1,0 +1,824 @@
+
+/*import fonts from fonts.css file*/
+@import url(fonts.css);
+
+
+/* CSS Variables */
+@import url(partials/variables.css);
+
+/* Import global styling */
+@import url(partials/global.css);
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.soeto{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Start Aqua area*/
+
+.aqua{
+	height: 92vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/hero-bg.jpg);
+    background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+/*Start Header or Navbar area*/
+
+.header_area{
+    background-color: #ffffff;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 28rem 0 12rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.aqua .header_area .main-menu .navbar{
+    padding: 1.2rem 1rem;
+}
+
+.aqua .header_area .main-menu .nav-item .nav-link{
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 20px;
+    color: var(--title-color);
+}
+
+.aqua .header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aqua .header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*End Header or Navbar Area*/
+
+.text-box{
+	width: 100%;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 5rem;
+}
+
+sparo{
+    color: #4d6400;
+    filter: brightness(1.8);
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 16px;
+    font-weight: 500;
+	color: #ffffff;
+}
+
+.blah{
+    width: 100%;
+    height: 6vh;
+    background-color: #90B318;
+    box-shadow: var(--box-shadow4);
+}
+
+@media(max-width: 700px){
+	.text-box h1{
+		font-size: 45px;
+	}
+
+    .text-box p{
+        font-size: 12px;
+    }
+}
+
+/*End Aqua area*/
+
+
+/*Start About Area*/
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-area{
+	width: 62%;
+	margin: auto;
+    margin-bottom: 10rem;
+}
+
+.main-aqua .about-area .row1 .img-box{
+    background-image: url(../img/nuts-bg1.webp);
+    background-position: center;
+	background-size: cover;
+    margin-top: 8rem;
+    box-shadow: var(--box-shadow4);
+    width: 27rem;
+    border-radius: 2rem;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.main-aqua .about-area .about-title{
+    width: 30rem;
+    margin-top: 2.5rem;
+}
+
+.main-aqua .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 45px/ 250px var(--roboto);
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.main-aqua .about-area .about-title .paragraph > p{
+    padding: 10px 0;
+}
+
+
+
+/*img-box float animation keyframe start*/
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(30px);
+    }
+
+    50%{
+        transform: translateY(-0px);
+    }
+
+    100%{
+        transform: translateY(30px);
+    }
+}
+
+/*img-box float animation keyframe end*/
+
+
+
+/*------------ about us page ------------*/
+
+.sub-header{
+	height: 92vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/drone3.jpg);
+    background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.sun-header .header_area .main-menu .navbar{
+    padding: 1.2rem 1rem;
+}
+
+.sub-header .header_area .main-menu .nav-item .nav-link{
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 20px;
+    color: var(--title-color);
+}
+
+.sub-header .header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sub-header .header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sub-header h1{
+    font: normal bold 45px/60px var(--roboto);
+	font-size: 60px;
+	font-weight: 600;
+    color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.sub-header span{
+    color: var(--primary-color);
+}
+
+.about-us{
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	margin-bottom: 7rem;
+}
+
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+
+.sfa{
+    animation: slideRight 1s ease forwards;
+}
+
+.sfa{
+    animation: slideUp 1s ease forwards;
+}
+
+.about-col img{
+	width: 100%;
+	height: 70%;
+	border-radius: 20px;box-shadow: var(--box-shadow);
+}
+
+.about-col h1{
+    font: normal bold 45px/30px var(--roboto);
+	padding-top: 3rem;
+    font-size: 30px;
+	font-weight: 600;
+}
+
+.about-col p{
+	padding: 20px 0 25px;
+}
+
+.chart{
+    background: #ebebeb;
+    margin: 10rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.chart h2{
+    text-align: center;
+    color: var(--text-color);
+    padding: 5rem 1rem;
+}
+
+.chart .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Style for each "container" div */
+.container {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.gmmb{
+    margin-bottom: 10rem;
+	margin: 150px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/industry3.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 170px 20px;
+}
+
+.gmmb h1{
+    
+    color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+ 
+
+
+
+
+/*End About Area*/
+
+
+
+
+
+/*------ Start Services Area ------*/
+
+
+.crops{
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.crops h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.crops .diva .goku{
+    margin: 0rem center;
+}
+
+.dork{
+    background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/industry2.jpg);
+}
+
+.img-box-2{
+    background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/crop1.jpg);
+    background-position: center;
+	background-size: cover;
+    margin-top: 8rem;
+    box-shadow: var(--box-shadow4);
+    height: 30rem;
+    width: 27rem;
+    border-radius: 2rem;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.pokemon{
+    padding: 10rem 0rem;
+}
+
+/*Start 3rd main-list area*/
+
+.main-aqua .diva{
+    margin: 0rem auto;
+    padding: 0rem;
+    text-align: center;
+}
+
+.main-aqua .diva h3{
+    text-align: center;
+}
+
+.main-aqua .diva .main-3{
+    box-shadow: var(--box-shadow);
+    margin: 0rem auto;
+    padding: 4rem;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.main-aqua .main-3 .flex-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+}
+
+.main-aqua .main-3 .list{
+    flex-basis: 21%;
+    text-align: left;
+}
+
+/*End 3rd main-list area*/
+
+h1{
+	font-size: 7rem;
+	font-weight: 600;
+}
+
+p{
+    color: #777;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+	}
+
+    h1{
+        font-size: 3rem;
+    }
+}
+
+.mix{
+    margin: 15rem 0rem;
+}
+
+.mix h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.img-box-3{
+    background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/industry1.jpg);
+    background-position: center;
+	background-size: cover;
+    box-shadow: var(--box-shadow4);
+    height: 30rem;
+    width: 27rem;
+    border-radius: 2rem;
+}
+
+.land{
+    margin: 5rem 0rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.land h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.land .diva .mopo{
+    margin-bottom: 10rem;
+	margin: 70px auto;
+	width: 80%;
+    height: 70vh;
+	background-image: url(../img/land1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.land p{
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.employ{
+    margin: 5rem 0rem;
+}
+
+.employ h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.employ h2{
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+
+
+/*------ End Services Area ------*/
+
+
+/*------ Start service area -----*/
+
+.dork2{
+    background-image: linear-gradient(rgba(30, 21, 4, 0.49),#04091e73), url(../img/earth.jpg);
+}
+
+.main-aqua .about-area .about-title{
+    text-align: center;
+}
+
+
+.Comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+ .Comment-box h3{
+      text-align: left;
+}
+
+ .comment-form input, .comment-form textarea{
+     width: 100%;
+     padding: 10px;
+     margin: 15px 0;
+     box-sizing: border-box;
+     border: none;
+     outline: none;
+     background: #f0f0f0;
+}
+
+ .comment-form button{
+     margin: 10px 0;
+}
+
+/*------ End service area -----*/
+
+
+
+.redo{
+    margin-bottom: 10rem;
+	margin: 150px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/BOD4.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 170px 20px;
+}
+
+
+
+
+
+
+
+/*---------- Start Sales Page Area -----------*/
+
+.bleh{
+    display: flex;
+    height: 100vh;
+	width: 100%;
+    background: linear-gradient( #f5fbff, #d1e5f4);
+}
+
+.bleh{
+    animation: opacity 1s ease;
+}
+
+.bleh .image{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    height: 95vh;
+    width: 50%;
+    opacity: 0;
+    background-image: url(../img/amoeba.png);
+    animation: opacity 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.bleh .image img{
+    margin: 4rem 14rem;
+    width: 40rem;
+    border-radius: 20px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.bleh .imugu img{
+    filter: brightness(1.2);
+}
+
+.bleh .image .ultra{
+    margin: 6rem 16rem;
+    height: 30rem;
+    width: 30rem;
+}
+
+.sale-box{
+    margin: 8rem 10rem;
+    box-shadow: var(--box-shadow4);
+    height: 30rem;
+    width: 30rem;
+    opacity: 0;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    justify-content: center;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.bleh .sale-box .guy-box{
+    justify-content: center;
+    padding: 12px;
+    margin-top: 5rem;
+}
+
+
+
+.bruh{
+    text-align: center;
+    color: #777;
+    letter-spacing: 3px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	padding: 4px;
+}
+
+
+/*---------- Start Animation sector for Sales Page Area ----------*/
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    0%{
+        transform: translatey(250px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    0%{
+        transform: translate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/*---------- End Animation sector for Sales Page Area ----------*/
+
+
+/*---------- End Sales Page Area -----------*/
+
+
+
+
+
+/*Start Blog Area*/
+
+
+.main-aqua .about-me-area{
+    position: center;
+}
+
+.main-aqua .about-me-area .about-title p{
+    padding: 1rem  7rem;
+}
+.main-aqua .about-me-area .about-title h1{
+    font: normal 500 16px/60px var(--roboto);
+    font-size: 2.5rem;
+}
+
+.main-aqua .about-me-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+    border-radius: 1rem;
+}
+
+.main-aqua .about-me-area .client .client-img{
+    padding: 2rem;
+}
+.main-aqua .about-me-area .client .client-img img{
+    border-radius: 1rem;
+}
+
+.main-aqua .about-me-area .client .about-client{
+    padding-top: 4rem;
+}
+
+.main-aqua .about-me-area .client .about-client .fa{
+    color: rgb(218, 218, 0);
+}
+
+.main-aqua .about-me-area .client .about-client h4{
+    font: normal 500 21px/20px var(--roboto);
+}
+
+.main-aqua .about-me-area .client .about-client p{
+    font-size: 14px;
+}
+
+.main-aqua .about-me-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.main-aqua .about-me-area .owl-carousel .owl-dots .owl-dot.active span{
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}  
+
+
+/*End Blog Area*/
+
+
+
+
+/*-------- Start Contact Area -------*/
+
+
+.cta{
+    margin-bottom: 10rem;
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/BOD4.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.cta h1{
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+
+@media(max-width: 700px){
+	.cta .h1{
+		font-size: 24px;
+	}
+}
+
+
+/*-------- End Contact Area -------*/
+
+
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #90B318;
+    height: 15rem;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social .buga{
+    font-weight: 600;
+    color: white;
+}
+
+footer .social .sento{
+    color: white;
+}
+
+footer .social a>i{
+    font-size: 33px;
+    padding: 2rem;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+footer .social a:hover>i{
+    color: #d8ff59;
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+
